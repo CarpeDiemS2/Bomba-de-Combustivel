@@ -2,7 +2,7 @@ package exercicio;
 
 /**
  *
- * @author igor
+ * @author igor de oliveira
  */
 public class bombaCombustivel {
 
