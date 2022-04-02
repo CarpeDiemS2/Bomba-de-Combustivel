@@ -23,7 +23,7 @@ public class bombaCombustivel {
             this.quantidadeCombustivel = 10000f;
             System.out.printf("\ncombustivel selecionado gasolina");
             System.out.printf("\nValor por litro %.2f ", this.valorLitro);
-            System.out.printf("\nquantidade de litros em nossa bomba %.2f L", this.quantidadeCombustivel);
+            System.out.printf("\nquantidade de litros em nosso tanque %.2f L", this.quantidadeCombustivel);
             System.out.printf("\n");
         }
 
@@ -32,7 +32,7 @@ public class bombaCombustivel {
             this.quantidadeCombustivel = 20000f;
             System.out.printf("\ncombustivel selecionado diesel");
             System.out.printf("\nValor por litro %.2f ", this.valorLitro);
-            System.out.printf("\nquantidade de litros em nossa bomba %.2f L", this.quantidadeCombustivel);
+            System.out.printf("\nquantidade de litros em nosso tanque %.2f L", this.quantidadeCombustivel);
             System.out.printf("\n");
 
         }
@@ -55,9 +55,9 @@ public class bombaCombustivel {
         }
 
         System.out.println("");
-        System.out.println("Quantidade de Litros da bomba ANTIGA: " + this.getQuantidadeCombustivel() + " L");
+        System.out.println("Quantidade de Litros no tanque ANTIGA: " + this.getQuantidadeCombustivel() + " L");
         this.setQuantidadeCombustivel(this.getQuantidadeCombustivel() - abastecerPorValor / this.getValorLitro());
-        System.out.println("Quantidade de litros na bomba ATUAL: " + this.getQuantidadeCombustivel() + " L");
+        System.out.println("Quantidade de litros no tanque ATUAL: " + this.getQuantidadeCombustivel() + " L");
 
     }
 
@@ -66,9 +66,9 @@ public class bombaCombustivel {
         float tot1 = abastecerPorLitro * this.getValorLitro();
         System.out.printf("Total a ser Pago R$%.2f", tot1);
         System.out.println("");
-        System.out.println("Quantidade de Litros da bomba ANTIGA: " + this.getQuantidadeCombustivel());
+        System.out.println("Quantidade de Litros no tanque ANTIGA: " + this.getQuantidadeCombustivel());
         this.setQuantidadeCombustivel(this.getQuantidadeCombustivel() - abastecerPorLitro);
-        System.out.println("Quantidade de litros na bomba ATUAL: " + this.getQuantidadeCombustivel());
+        System.out.println("Quantidade de litros no tanque ATUAL: " + this.getQuantidadeCombustivel());
 
     }
 
@@ -94,9 +94,9 @@ public class bombaCombustivel {
     }
 
     public void alterarQuantidadeCombustivel(float alterarQuantidadeCombustivel) {
-        System.out.println("\nQuantidade de Litros na bomba ANTIGA: " + this.getQuantidadeCombustivel());
+        System.out.println("\nQuantidade de Litros no tanque ANTIGA: " + this.getQuantidadeCombustivel());
         this.setQuantidadeCombustivel(alterarQuantidadeCombustivel);
-        System.out.println("Quantidade de Litros na bomba ATUAL " + this.getQuantidadeCombustivel());
+        System.out.println("Quantidade de Litros no tanque ATUAL " + this.getQuantidadeCombustivel());
 
     }
 

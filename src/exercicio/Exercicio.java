@@ -16,9 +16,9 @@ public class Exercicio {
      */
     public static void main(String[] args) {
         
-        bombaCombustivel pessoa1 = new bombaCombustivel("gasolina");
+        bombaCombustivel pessoa1 = new bombaCombustivel("diesel");
 
-        pessoa1.abastecerPorLitro(1f);
+        pessoa1.abastecerPorValor(4);
         
       
     }
